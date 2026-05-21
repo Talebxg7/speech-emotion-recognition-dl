@@ -1,0 +1,10 @@
+{
+  "autoencoder": {
+    "val_mse": 1.001673,
+    "test_mse": 1.001521
+  },
+  "attention": {
+    "test_accuracy": 0.0972,
+    "test_macro_f1": 0.0854
+  }
+}
