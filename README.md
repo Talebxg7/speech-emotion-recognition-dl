@@ -27,7 +27,7 @@ In this work, we propose a unified pipeline that combines **five distinct deep l
 
 ---
 
-## 2. Dataset
+## 2. Dataset ( TALEB )
 
 ### 2.1 RAVDESS
 
@@ -45,7 +45,7 @@ We use the **Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS
 
 RAVDESS was selected over common alternatives (MNIST-style benchmarks, Kaggle-only datasets) for three reasons: (1) it originates from a peer-reviewed publication with rigorous perceptual validation, (2) it provides balanced, professionally performed emotional expressions across a demographically diverse set of actors, and (3) its eight-class label set provides sufficient complexity to evaluate multi-class classification architectures.
 
-### 2.2 Preprocessing
+### 2.2 Preprocessing ( TALEB )
 
 Raw audio files are processed through the following pipeline (see `preprocess_ravdess.py`):
 
