@@ -213,21 +213,20 @@ To justify each architectural component, we conduct a systematic ablation study 
 
 | Configuration | Test Acc | Macro F1 |
 |---|---|---|
-| Full model (all 5 blocks) | — | — |
-| w/o Standalone CNN | — | — |
-| w/o BiLSTM (replace with GRU) | — | — |
-| w/o Autoencoder | — | — |
-| w/o Attention | — | — |
-| CNN only (baseline) | — | — |
+| Full model (all 5 blocks) | 0.7118 | 0.6997 |
+| w/o Standalone CNN | 0.6597 | 0.6398 |
+| w/o BiLSTM | 0.6771 | 0.6668 |
+| w/o Autoencoder | 0.7083 | 0.6989 |
+| w/o Attention | 0.6875 | 0.6762 |
+| CNN only (baseline) | 0.6250 | 0.6040 |
 
-> Results will be filled in after training is complete.
 
 **LSTM vs GRU comparison** (İpek's block):
 
-| Model | Val Acc | Val Loss | Training Time |
-|---|---|---|---|
-| BiLSTM | — | — | — |
-| BiGRU | — | — | — |
+| Model | Test Acc | Macro F1 | Val Acc | Val Loss |
+|---|---|---|---|---|
+| BiLSTM | 0.6562 | 0.6448 | 0.6667 | 0.9276 |
+| BiGRU | 0.6875 | 0.6733 | 0.7083 | 1.0065 |
 
 ---
 
@@ -328,9 +327,9 @@ python ablation/ablation_study.py
 |---|---|
 | **Taleb** | Dataset selection, preprocessing pipeline, GitHub README |
 | **İpek** | CNN + BiLSTM/GRU block, LSTM vs GRU ablation |
-| **Ahmad** | Standalone CNN block |
+| **Ahmad** | Standalone CNN block (retrained by Adad due to normalization errors) |
 | **Omar** | Autoencoder, Attention/Transformer block, t-SNE visualization |
-| **Adad** | Model integration, ablation study, final presentation |
+| **Adad** | CNN retraining, model integration, ablation study, final presentation |
 
 ---
 
